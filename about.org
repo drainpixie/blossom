@@ -1,0 +1,42 @@
+#+title: About Me 
+#+author: drainpixie 
+#+OPTIONS: \n:t
+
+* Who Am I
+Hey there, I'm Faye, but you might know me as =drainpixie= online.
+I'm a 17-year-old computer science enthusiast.
+
+I've got a soft spot for all things programming, especially the quirky and niche stuff. Apart from programming, I'm a sucker for romance/psychological manga and wuxia light novels. I might just be a bookworm at heart.
+
+Other than that, I love eye candy! my passion for code aesthetics, fonts, and theming derive from it.
+
+* Programming 
+My favourite thing about programming is the instant gratification you get, I love writing code that /looks/ good and /works/ equally as good.
+
+During the years, I've gained many skills, such as:
++ JavaScript, TypeScript, C/C++, Go
++ Package managers and general tooling
+  + Npm, Yarn, Pnpm 
+  + Lerna, Yarn Workspaces, Pnpm Workspaces
+  + Make, CMake 
++ Proficiency with Unix systems
+  + Shell scripting
+  + File-system
+  + Coreutils
+  + Automation 
++ Text-editor flexibility
+  + Vim (and NeoVim)
+  + Emacs
+  + VSCode 
++ Other general skills
+  + Git, Github
+  + HTML, CSS
+  + ORG Mode  
+  + Docker
+
+* Music
+Remember how I said I like niche and quirky stuff? /well/, my music taste falls in those categories as well. I listen to what's generally considered /"trash"/ music (but oh, how could I blame them, lol).
+
+I'm a big fan of loud and fast music, so jungle, dnb, breakcore, splittercore, and the likes are my bop, although that doesn't mean I don't enjoy "normal" music too.
+
+One such example is pop and rock music, I have a 200~ tracks and counting playlist composed entirely of the aforementioned, with artists like *Radiohead*, *Duster*, *The Smiths*, *The Cure*, etc.

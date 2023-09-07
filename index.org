@@ -1,0 +1,11 @@
+#+title: Faye Keller
+#+author: drainpixie 
+#+OPTIONS: \n:t
+
+Queen of everything opinionated.
+Pragmatic computerbun woman.
+Linux-acquiescent resignee.
+Pokémon banshee.
+
+If you want to learn more [[./about.org][about me]].
+I also have a [[./blog][blog]].
