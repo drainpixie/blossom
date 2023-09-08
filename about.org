@@ -1,6 +1,13 @@
 #+title: About Me 
 #+author: drainpixie 
-#+OPTIONS: \n:t
+#+OPTIONS: \n:t toc:2
+
+* Table Of Contents :toc:noexport:
+- [[#who-am-i][Who Am I]]
+  - [[#programming][Programming]]
+  - [[#music][Music]]
+- [[#contacts][Contacts]]
+- [[#links][Links]]
 
 * Who Am I
 Hey there, I'm Faye, but you might know me as =drainpixie= online.
@@ -10,7 +17,7 @@ I've got a soft spot for all things programming, especially the quirky and niche
 
 Other than that, I love eye candy! my passion for code aesthetics, fonts, and theming derive from it.
 
-* Programming 
+** Programming 
 My favourite thing about programming is the instant gratification you get, I love writing code that /looks/ good and /works/ equally as good.
 
 During the years, I've gained many skills, such as:
@@ -25,18 +32,21 @@ During the years, I've gained many skills, such as:
   + Coreutils
   + Automation 
 + Text-editor flexibility
-  + Vim (and NeoVim)
-  + Emacs
+  + [[https://github.com/drainpixie/petal/tree/main/.config/nvim][Vim]]
+  + [[https://github.com/drainpixie/petal/tree/main/.config/emacs][Emacs]]
   + VSCode 
 + Other general skills
-  + Git, Github
+  + Git, [[https://github.com/drainpixie][GitHub]]
   + HTML, CSS
-  + ORG Mode  
+  + ORG Mode (which [[https://github.com/drainpixie/blossom][this website]] is written in)
   + Docker
 
-* Music
+** Music
 Remember how I said I like niche and quirky stuff? /well/, my music taste falls in those categories as well. I listen to what's generally considered /"trash"/ music (but oh, how could I blame them, lol).
 
-I'm a big fan of loud and fast music, so jungle, dnb, breakcore, splittercore, and the likes are my bop, although that doesn't mean I don't enjoy "normal" music too.
+I'm a big fan of loud and fast music, so, jungle, dnb, breakcore, splittercore, and the likes are my bop, although that doesn't mean I don't enjoy "normal" music too.
 
 One such example is pop and rock music, I have a 200~ tracks and counting playlist composed entirely of the aforementioned, with artists like *Radiohead*, *Duster*, *The Smiths*, *The Cure*, etc.
+
+* Contacts
+* Links
