@@ -1,0 +1,7 @@
+* 🌸 bloom
+a blossoming personal website
+
+* 📑 instructions
+#+begin_src sh
+  $ emacs -Q --script build.el
+#+end_src

@@ -1,0 +1,25 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v1
+
+      - name: Install Emacs
+        run: sudo add-apt-repository ppa:kelleyk/emacs --yes && sudo apt update --yes && sudo apt install emacs28-nox --yes
+
+      - name: Build the site
+        run: emacs -Q --script build.el
+
+      - name: Publish generated content to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: public
