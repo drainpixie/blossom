@@ -5,6 +5,9 @@ on:
     branches:
       - main 
 
+permissions:
+  contents: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -19,7 +22,8 @@ jobs:
         run: emacs -Q --script build.el
 
       - name: Publish generated content to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: public
+
