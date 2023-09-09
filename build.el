@@ -46,7 +46,7 @@
         ("styles"
 	 :recursive t
          :base-extension "css"
-         :base-directory "./styles"
+         :base-directory "./styles/"
          :publishing-directory "./public/styles"
          :publishing-function org-publish-attachment)
 
