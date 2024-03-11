@@ -464,7 +464,6 @@ label.margin-toggle:not(.sidenote-number) {
         clear: both;
         width: 95%;
         margin: 1rem 2.5%;
-        vertical-align: baseline;
         position: relative;
     }
 
