@@ -18,7 +18,7 @@
       org-html-head-include-scripts nil
 	  org-src-fontify-natively t
       org-html-head-include-default-style nil
-      org-html-head "<link rel=\"stylesheet\" href=\"styles/org.css\">")
+      org-html-head "<link rel=\"stylesheet\" href=\"/styles/org.css\">")
 
 
 (setq org-publish-project-alist
