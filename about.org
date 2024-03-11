@@ -1,5 +1,4 @@
 #+title: About Me 
-#+author: drainpixie 
 #+OPTIONS: \n:t toc:2
 
 * Table Of Contents :toc:noexport:

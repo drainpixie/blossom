@@ -1,4 +1,4 @@
-/* tufte-css */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -481,3 +481,28 @@ label.margin-toggle:not(.sidenote-number) {
         width: 100%;
     }
 }
+
+
+/* codeblocks */
+pre {
+    padding: 1em;
+    margin: 1em 0;
+    overflow: auto;
+    border: 1px solid #ddd;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #f8f8f8;
+
+    font-family: "JetBrains Mono", monospace;
+}
+
+pre code {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    white-space: pre;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
+}
+
