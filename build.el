@@ -17,8 +17,7 @@
       org-html-htmlize-output-type 'css
       org-html-head-include-scripts nil
 	  org-src-fontify-natively t
-      org-html-head-include-default-style nil
-      org-html-head "<link rel=\"stylesheet\" href=\"/styles/org.css\">")
+      org-html-head-include-default-style nil) 
 
 
 (setq org-publish-project-alist
@@ -33,7 +32,8 @@
 	 :with-toc nil
 	 :section-numbers nil
 	 :time-stamp-file nil
-
+     :html-head "<link rel=\"stylesheet\" href=\"./styles/org.css\">"
+	 
 	 :publishing-function org-html-publish-to-html)
 
 	("images"
@@ -66,6 +66,8 @@
 	 :base-directory "./posts/"
 	 :base-extension "org"
 
+     :html-head "<link rel=\"stylesheet\" href=\"../styles/org.css\">"
+	 
 	 :publishing-directory "./public/blog"
 	 :publishing-function org-html-publish-to-html
 
