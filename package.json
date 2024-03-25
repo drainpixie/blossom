@@ -1,0 +1,12 @@
+{
+  "name": "blossom",
+  "author": "drainpixie",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "vite": "^5.2.6"
+  }
+}
