@@ -55,7 +55,21 @@ export default async function Home() {
             <div key={post.slug}>
               <h2>{post.meta.title}</h2>
               <p>
-                {post.meta.description}{" "}
+                {post.meta.description
+                  .split("*")
+                  .map((part: string, index: number) => {
+                    if (part === "!break") return <br key={index} />;
+
+                    return (
+                      <span
+                        key={index}
+                        className={index % 2 === 0 ? "" : "highlight"}
+                      >
+                        {part}
+                      </span>
+                    );
+                  })}
+                <br />
                 <Link
                   open={false}
                   href={`/posts/${post.slug}`}
