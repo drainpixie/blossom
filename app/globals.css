@@ -72,8 +72,7 @@ a {
 
   text-decoration-style: wavy;
 
-  /* The colour is different because for some reason they don't match even if they're the same */
-  text-decoration-color: rgb(192, 107, 121);
+  text-decoration-color: rgb(255, 192, 203);
   text-decoration-skip-ink: none;
   text-underline-offset: -0.02rem;
 }
