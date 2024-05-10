@@ -6,19 +6,19 @@ settings:
 
 devDependencies:
   '@sveltejs/adapter-auto':
-    specifier: ^3.2.0
+    specifier: ^3.0.0
     version: 3.2.0(@sveltejs/kit@2.5.7)
   '@sveltejs/kit':
-    specifier: ^2.5.7
+    specifier: ^2.0.0
     version: 2.5.7(@sveltejs/vite-plugin-svelte@3.1.0)(svelte@4.2.16)(vite@5.2.11)
   '@sveltejs/vite-plugin-svelte':
-    specifier: ^3.1.0
+    specifier: ^3.0.0
     version: 3.1.0(svelte@4.2.16)(vite@5.2.11)
   svelte:
-    specifier: ^4.2.16
+    specifier: ^4.2.7
     version: 4.2.16
   vite:
-    specifier: ^5.2.11
+    specifier: ^5.0.3
     version: 5.2.11
 
 packages:
