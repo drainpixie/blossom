@@ -2,20 +2,12 @@
     let gralatsPerTrochus = 5;
     let type = "shells";
 
+    const s = (x) => ({ label: x, bindValue: 0 });
     const sellables = {
-        shells: [
-            { label: "Sand Dollar", bindValue: 0 },
-            { label: "Aerolata", bindValue: 0 },
-            { label: "Starfish", bindValue: 0 },
-            { label: "Scallop", bindValue: 0 },
-            { label: "Trochus", bindValue: 0 },
-        ],
-        trash: [
-            { label: "Tire", bindValue: 0 },
-            { label: "Paper", bindValue: 0 },
-            { label: "Newspaper", bindValue: 0 },
-            { label: "Broken Bottle", bindValue: 0 },
-        ],
+        crab: [s("Red Crab"), s("Blue Crab"), s("Black Crab"), s("Green Crab"), s("Yellow Crab")],
+        trash: [s("Tire"), s("Paper"), s("Newspaper"), s("Broken Bottle")],
+        shells: [s("Scallop"), s("Starfish"), s("Trochus"), s("Aerolata"), s("Sand Dollar")],
+        mushrooms: [s("Red Mushroom"), s("Plain Mushroom"), s("Yellow Mushroom"), s("Purple Mushroom")],
     };
 
     const sellablesPrice = {
@@ -32,6 +24,19 @@
             newspaper: 4,
             brokenBottle: 5,
         },
+        mushrooms: {
+            redMushroom: 5,
+            plainMushroom: 5,
+            yellowMushroom: 5,
+            purpleMushroom: 5,
+        },
+        crab: {
+            blackCrab: 6,
+            blueCrab: 6,
+            greenCrab: 6,
+            redCrab: 6,
+            yellowCrab: 6,
+        },
     };
 
     const result = {
@@ -41,9 +46,7 @@
 
     function toCamelCase(str) {
         return str
-            .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) =>
-                index === 0 ? word.toLowerCase() : word.toUpperCase(),
-            )
+            .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) => (index === 0 ? word.toLowerCase() : word.toUpperCase()))
             .replace(/\s+/g, "");
     }
 
@@ -52,9 +55,7 @@
         result.trochusWorth = 0;
 
         result.gralats = sellables[type].reduce(
-            (acc, item) =>
-                acc +
-                item.bindValue * sellablesPrice[type][toCamelCase(item.label)], // a bit dirty lol
+            (acc, item) => acc + item.bindValue * sellablesPrice[type][toCamelCase(item.label)], // a bit dirty lol
             0,
         );
 
@@ -74,17 +75,15 @@
 
     <div>
         <label for="gralatsPerTrochus">Ratio</label>
-        <input
-            bind:value={gralatsPerTrochus}
-            type="number"
-            on:input={calculatePrice}
-        />
+        <input bind:value={gralatsPerTrochus} type="number" on:input={calculatePrice} />
     </div>
     <div>
         <label for="type">Type</label>
         <select id="type" bind:value={type}>
+            <option value="crab">Crab</option>
             <option value="shells">Shells</option>
             <option value="trash">Trash</option>
+            <option value="mushrooms">Mushrooms</option>
         </select>
     </div>
 
@@ -95,11 +94,7 @@
             {#each Object.entries(sellables[type]) as [key, item]}
                 <div>
                     <label for={key}>{item.label}</label>
-                    <input
-                        bind:value={item.bindValue}
-                        on:input={calculatePrice}
-                        type="number"
-                    />
+                    <input bind:value={item.bindValue} on:input={calculatePrice} type="number" />
                 </div>
             {/each}
         {/key}
