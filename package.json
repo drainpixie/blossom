@@ -2,25 +2,15 @@
   "name": "blossom",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "gray-matter": "^4.0.3",
-    "next": "14.1.4",
-    "next-mdx-remote": "^4.4.1",
-    "react": "^18",
-    "react-dom": "^18"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "8.57.0",
-    "eslint-config-next": "14.1.4",
-    "typescript": "^5"
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "svelte": "^4.2.12",
+    "vite": "^5.2.0"
   }
 }

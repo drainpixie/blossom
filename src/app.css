@@ -76,17 +76,3 @@ a {
   text-decoration-skip-ink: none;
   text-underline-offset: -0.02rem;
 }
-
-a:hover {
-  animation-play-state: running;
-}
-
-@keyframes move {
-  from {
-    background-position: 0 15px;
-  }
-
-  to {
-    background-position: 100% 15px;
-  }
-}
