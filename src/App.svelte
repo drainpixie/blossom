@@ -9,7 +9,7 @@
 			Enchantress of <span class="highlight">digital ecosystems</span>
 		</p>
 		<p>
-			<span class="highlight">DevOps</span> sorcery and <span className="highlight">backend</span> wizardry.
+			<span class="highlight">DevOps</span> sorcery and <span class="highlight">backend</span> wizardry.
 		</p>
 
 		<br />
