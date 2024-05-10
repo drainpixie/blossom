@@ -51,7 +51,7 @@ h2 {
   font-size: 82%;
 }
 
-p {
+p, input, select, label {
   font-family: "Fanwood", serif;
   color: #111;
 }
