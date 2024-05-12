@@ -2,7 +2,7 @@
     let gralatsPerTrochus = 5;
     let type = "shells";
 
-    const s = (x) => ({ label: x, bindValue: 0 });
+    const s = (x) => ({ label: x, placeholder: "0", bindValue: "" });
     const sellables = {
         crab: [s("Red Crab"), s("Blue Crab"), s("Black Crab"), s("Green Crab"), s("Yellow Crab")],
         trash: [s("Tire"), s("Paper"), s("Newspaper"), s("Broken Bottle")],
@@ -61,6 +61,11 @@
 
         result.trochusWorth = result.gralats / gralatsPerTrochus;
     }
+
+		function clearResults() {
+			result.gralats = 0;
+			result.trochusWorth = 0;
+		}
 </script>
 
 <svelte:head>
@@ -79,7 +84,7 @@
     </div>
     <div>
         <label for="type">Type</label>
-        <select id="type" bind:value={type}>
+        <select id="type" bind:value={type} on:change={clearResults}>
             <option value="crab">Crab</option>
             <option value="shells">Shells</option>
             <option value="trash">Trash</option>
@@ -94,7 +99,7 @@
             {#each Object.entries(sellables[type]) as [key, item]}
                 <div>
                     <label for={key}>{item.label}</label>
-                    <input bind:value={item.bindValue} on:input={calculatePrice} type="number" />
+                    <input bind:value={item.bindValue} placeholder={item.placeholder} on:input={calculatePrice} type="number" />
                 </div>
             {/each}
         {/key}
