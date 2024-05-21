@@ -1,4 +1,6 @@
 <script>
+    import Link from "../../lib/Link.svelte";
+
     let gralatsPerTrochus = 5;
     let type = "shells";
 
@@ -112,6 +114,11 @@
         <span class="highlight">{result.gralats} gralats</span>, for a total of
         <span class="highlight">{result.trochusWorth} trochus</span>
     </p>
+
+    <footer class="footer">
+        Credit to <Link href="https://github.com/nouun" text="nouun"/> for fixing a
+        <span class="highlight">massive</span> issue with this calculator
+    </footer>
 </main>
 
 <style>
@@ -122,5 +129,12 @@
 
         padding: 0.1rem;
         margin-left: 0.3rem;
+    }
+
+    .footer {
+        position: fixed;
+        left: 2rem;
+        bottom: 2rem;
+        width: 100%;
     }
 </style>
