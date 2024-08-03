@@ -21,12 +21,6 @@
 		<br />
 
 		<p>
-			You can contact me on
-			<Link
-				href="https://discord.com/users/1057755295574671421 />"
-				text="Discord"
-			/>
-			<br />
 			My code is on
 			<Link href="https://github.com/drainpixie" text="Github" />
 		</p>
