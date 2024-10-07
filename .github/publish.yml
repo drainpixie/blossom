@@ -1,0 +1,58 @@
+name: Publish to Github Pages
+
+on:
+  push:
+    branches: ["main"]
+  pull_requests:
+    branches: ["main"]
+
+  workflow_dispatch:
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: cachix/install-nix-action@v27
+      with:
+        github_access_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Install dependencies
+      run: nix develop --command "pnpm install"
+
+    - name: Build website
+      run: nix develop --command "pnpm build"
+
+    - name: Configure pages
+      uses: actions/configure-pages@v5
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: 'dist'
+  
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      pages: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deply to Github Pages
+        uses: actions/deploy-pages@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          artifact-path: dist
+          cleanup: false
+          persist-credentials: false
+  
