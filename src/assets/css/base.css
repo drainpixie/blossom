@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Medio";
-  src: url("/assets/fonts/medio.otf") format("opentype");
+  src: url("../fonts/medio.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Aileron Ultra Light";
-  src: url("/assets/fonts/aileron.otf") format("opentype");
+  src: url("../fonts/aileron.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Aileron Light";
-  src: url("/assets/fonts/aileronThin.otf") format("opentype");
+  src: url("../fonts/aileronThin.otf") format("opentype");
 }
 
 * {
