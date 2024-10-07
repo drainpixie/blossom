@@ -1,12 +1,9 @@
 name: Publish to Github Pages
 
 on:
+  workflow_dispatch:
   push:
     branches: ["main"]
-  pull_requests:
-    branches: ["main"]
-
-  workflow_dispatch:
 
 concurrency:
   group: "pages"
