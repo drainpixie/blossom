@@ -19,10 +19,10 @@ jobs:
         github_access_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Install dependencies
-      run: nix develop --command "pnpm install"
+      run: nix develop --command pnpm install
 
     - name: Build website
-      run: nix develop --command "pnpm build"
+      run: nix develop --command pnpm build
 
     - name: Configure pages
       uses: actions/configure-pages@v5
