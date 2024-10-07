@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Medio";
+  src: url("/assets/fonts/medio.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aileron Ultra Light";
+  src: url("/assets/fonts/aileron.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aileron Light";
+  src: url("/assets/fonts/aileronThin.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* White */
+  --bg-colour: #fff;
+
+  /* Black */
+  --highlight-colour: #111;
+  /* Dune */
+  --heading-colour: #222;
+  /* Silver */
+  --paragraph-colour: #333;
+
+  --accent-colour: #e9eb93;
+  /* Primrose */
+
+  --font-heading: Medio;
+  --font-paragraph: Aileron Ultra Light;
+  --font-highlight: Aileron Light;
+}
+
+body {
+  margin: 4rem;
+
+  max-width: 30%;
+}
+
+::selection {
+  background-color: var(--accent-colour);
+}
+
+::moz-selection {
+  background-color: var(--accent-colour);
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 2rem;
+    max-width: 70%;
+  }
+}
+
+p {
+  font-family: var(--font-paragraph);
+  font-size: 1.2rem;
+  color: var(--paragraph-colour);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--heading-colour);
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+div:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+
+a {
+  font-family: var(--font-highlight);
+  color: var(--highlight-colour);
+}
+
+a.lowkey {
+  color: var(--paragraph-colour);
+}
+
+a.back::before {
+  content: "\21A9";
+  /* ↩ */
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+a:not(.back)::after {
+  content: "\2197";
+  /* ↗ */
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+
+ul {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+
+  list-style: none;
+  counter-reset: list;
+
+  border-left: 6px solid var(--accent-colour);
+}
+
+li {
+  counter-increment: list;
+
+  color: var(--paragraph-colour);
+  font-family: var(--font-paragraph);
+  font-size: 1.2rem;
+
+  margin-bottom: 0.3rem;
+}
+
+li::before {
+  content: counter(list) ". ";
+  font-family: var(--font-highlight);
+  font-size: 1.2rem;
+  color: var(--highlight-colour);
+  margin-right: 0.5rem;
+}
+
+.highlight,
+em {
+  font-style: normal;
+  font-family: var(--font-highlight);
+  color: var(--highlight-colour);
+}
+
+#posts-container {
+  padding-left: 0.7rem;
+  border-left: 6px solid var(--accent-colour);
+}
+
+.canvas-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+}
+
+#three-canvas {
+  width: 100%;
+  height: 100%;
+}
