@@ -1,7 +1,7 @@
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { basename, extname, join, resolve } from "node:path";
-import markdown from "markdown-it";
 import matter from "gray-matter";
+import markdown from "markdown-it";
 import markdownAttrs from "markdown-it-attrs";
 import markdownItBracketedSpans from "markdown-it-bracketed-spans";
 
@@ -15,11 +15,9 @@ md.use(markdownItBracketedSpans).use(markdownAttrs);
 
 const defaultLinkOpen =
   md.renderer.rules.link_open ??
-  function (tokens, idx, options, _, self) {
-    return self.renderToken(tokens, idx, options);
-  };
+  ((tokens, idx, options, _, self) => self.renderToken(tokens, idx, options));
 
-md.renderer.rules.link_open ??= function (tokens, idx, options, env, self) {
+md.renderer.rules.link_open ??= (tokens, idx, options, env, self) => {
   const token = tokens[idx];
 
   token.attrSet("target", "_blank");
@@ -27,6 +25,20 @@ md.renderer.rules.link_open ??= function (tokens, idx, options, env, self) {
 
   return defaultLinkOpen(tokens, idx, options, env, self);
 };
+
+// A "typographical widow" is a single word on a line by itself.
+// This rule prevents typographical widows by adding a non-breaking space.
+md.core.ruler.after("inline", "avoid_widows", (state) => {
+  for (const token of state.tokens) {
+    if (token.type !== "inline") continue;
+    if (!token.content) continue;
+
+    const words = token.content.trim().split(" ");
+    const last = words.splice(words.length - 2, 2);
+
+    token.content = words.join(" ") + "&nbsp;" + last.join(" ");
+  }
+});
 
 const getDirectories = (cwd) => ({
   posts: resolve(cwd, "src", "posts"),
@@ -232,4 +244,3 @@ export function blogPlugin() {
     },
   };
 }
-
