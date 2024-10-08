@@ -8,11 +8,6 @@
   src: url("/assets/fonts/aileron.otf") format("opentype");
 }
 
-@font-face {
-  font-family: "Aileron Light";
-  src: url("/assets/fonts/aileronThin.otf") format("opentype");
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +32,6 @@
 
   --font-heading: Medio;
   --font-paragraph: Aileron Ultra Light;
-  --font-highlight: Aileron Light;
 }
 
 body {
@@ -109,6 +103,10 @@ a {
   color: var(--paragraph-colour);
 }
 
+a.lowkey {
+  background-color: #fff !important;
+}
+
 a.back {
   background-color: #fff !important;
 }
@@ -154,7 +152,6 @@ li {
 
 li::before {
   content: counter(list) ". ";
-  font-family: var(--font-highlight);
   font-size: 1.2rem;
   color: var(--highlight-colour);
   margin-right: 0.5rem;

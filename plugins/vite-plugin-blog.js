@@ -95,9 +95,9 @@ const createHTML = ({ title, date, tags, content, description }) => `
 </html>`;
 
 const createPostPreview = ({ date, tags, link, title }) => `
-    <div class="popout">
-        <p><span class="highlight">${date}</span> <span class="highlight">${tags.join(", ")}</span></p>
-        <p><a href="${link}">${title}</a></p>
+    <div> 
+        <p><span class="highlight">${date}</span> ${tags.join(", ")}</p>
+        <p><a class="lowkey" href="${link}">${title}</a></p>
     </div>`;
 
 const readMarkdownFile = async (filePath) => {

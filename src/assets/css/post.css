@@ -1,38 +1,49 @@
 @import url("base.css");
 
 h1 a.back {
-    font-family: var(--font-heading) !important;
+  font-family: var(--font-heading) !important;
 }
 
 h2 {
-    margin-top: 1.7rem;
+  margin-top: 1.7rem;
 }
 
 h2:first-of-type {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 h3 {
-    margin-top: 1.7rem;
+  margin-top: 1.7rem;
 }
 
 .circle {
-    border-radius: 50%;
-    height: .8rem;
-    width: .8rem;
-    margin-right: .4rem;
-    display: inline-block;
-    vertical-align: middle;
+  border-radius: 50%;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 0.4rem;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.circle.white { background-color: var(--bg-colour); }
-.circle.primrose { background-color: var(--accent-colour); }
-.circle.black { background-color: var(--highlight-colour); }
-.circle.dune { background-color: var(--heading-colour); }
-.circle.silver { background-color: var(--paragraph-colour); }
+.circle.white {
+  background-color: var(--bg-colour);
+}
+.circle.primrose {
+  background-color: var(--accent-colour);
+}
+.circle.black {
+  background-color: var(--highlight-colour);
+}
+.circle.dune {
+  background-color: var(--heading-colour);
+}
+.circle.silver {
+  background-color: var(--paragraph-colour);
+}
 
 blockquote {
-    font-style: italic;
-    border-left: 3px solid var(--accent-colour);
-    padding-left: 1rem;
+  font-style: italic;
+  border-left: 3px solid var(--accent-colour);
+  padding-left: 1rem;
 }
+
