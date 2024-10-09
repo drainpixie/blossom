@@ -105,6 +105,7 @@ const createPostLink = (filePath) => `/posts/${basename(filePath, ".md")}.html`;
 
 const processPost = async (filePath) => {
   const { data, content } = await readMarkdownFile(filePath);
+  if (data.todo) return null;
 
   return {
     ...data,
@@ -133,7 +134,8 @@ const getMarkdownFiles = async (dir) => {
 const processPosts = async (postsDir) => {
   const files = await getMarkdownFiles(postsDir);
   const posts = await Promise.all(files.map(processPost));
-  return posts.sort(comparePostsByDate);
+
+  return posts.filter(Boolean).sort(comparePostsByDate);
 };
 
 const writePostHTML = async (post, outDir) => {
