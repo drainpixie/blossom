@@ -53,6 +53,7 @@ const createHTML = ({ title, date, tags, content, description }) => `
         <link rel="stylesheet" href="/assets/css/post.css" />
         
         <meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="date" content="${date}" />
         <meta name="tags" content="${tags.join(", ")}" />
         <meta name="description" content="${description}" />
