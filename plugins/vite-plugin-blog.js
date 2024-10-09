@@ -1,5 +1,6 @@
 import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
 import { basename, extname, join, resolve } from "node:path";
+import { createPostPreview } from "../src/assets/js/fetch";
 import matter from "gray-matter";
 import markdown from "markdown-it";
 import markdownAttrs from "markdown-it-attrs";
@@ -94,12 +95,6 @@ const createHTML = ({ title, date, tags, content, description }) => `
     <script type="module" src="/assets/js/index.js"></script>
 </html>`;
 
-const createPostPreview = ({ date, tags, link, title }) => `
-    <div> 
-        <p><span class="highlight">${date}</span> ${tags.join(", ")}</p>
-        <p><a class="lowkey" href="${link}">${title}</a></p>
-    </div>`;
-
 const readMarkdownFile = async (filePath) => {
   const content = await readFile(filePath, "utf-8");
   return matter(content);
@@ -109,6 +104,7 @@ const createPostLink = (filePath) => `/posts/${basename(filePath, ".md")}.html`;
 
 const processPost = async (filePath) => {
   const { data, content } = await readMarkdownFile(filePath);
+
   return {
     ...data,
     pin: data.pin ?? false,
@@ -127,6 +123,7 @@ const comparePostsByDate = (a, b) => {
 
 const getMarkdownFiles = async (dir) => {
   const files = await readdir(dir);
+
   return files
     .filter((file) => extname(file) === ".md")
     .map((file) => join(dir, file));

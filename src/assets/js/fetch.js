@@ -1,15 +1,17 @@
-export async function initPosts() {
-    const response = await fetch('/api/posts');
-    const posts = await response.json();
+export const createPostPreview = ({ date, tags, link, title }) => `
+    <div> 
+        <p><span class="highlight">${date}</span> ${tags.join(", ")}</p>
+        <p><a class="lowkey" href="${link}">${title}</a></p>
+    </div>`;
 
-    const container = document.getElementById('posts-container');
-    posts.forEach(post => {
-        const postDiv = document.createElement('div');
-        postDiv.className = 'popout';
-        postDiv.innerHTML = `
-            <p><span class="highlight">${post.date}</span> <span class="highlight">${post.tags.join(', ')}</span></p>
-            <p><a href="${post.link}">${post.title}</a></p>
-        `;
-        container.appendChild(postDiv);
-    });
+export async function initPosts() {
+  const response = await fetch("/api/posts");
+  const posts = await response.json();
+
+  const container = document.getElementById("posts-container");
+  for (const post of posts) {
+    const div = document.createElement("div");
+    div.innerHTML = createPostPreview(post);
+    container.appendChild(div);
+  }
 }
