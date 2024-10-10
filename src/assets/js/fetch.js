@@ -1,7 +1,7 @@
 export const createPostPreview = ({ date, tags, link, title }) => `
     <div> 
-        <p><span class="highlight">${date}</span> ${tags.join(", ")}</p>
-        <p><a class="lowkey" href="${link}">${title}</a></p>
+				<p><a href="${link}">${title}</a></p>
+        <p>${date} ${tags.join(", ")}</p>
     </div>`;
 
 export async function initPosts() {

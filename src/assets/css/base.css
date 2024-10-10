@@ -114,6 +114,7 @@ a.back {
 a.back::before {
   /* ↩ */
   content: "\21A9";
+  font-variant-ligatures: none; /* prevent arrow from being replaced by emoji */
   text-decoration: none;
   display: inline-block;
   margin-right: 0.5rem;
@@ -122,6 +123,7 @@ a.back::before {
 a:not(.back)::after {
   /* ↗ */
   content: "\2197";
+  font-variant-ligatures: none; /* prevent arrow from being replaced by emoji */
   text-decoration: none;
   display: inline-block;
   margin-left: 0.2rem;
