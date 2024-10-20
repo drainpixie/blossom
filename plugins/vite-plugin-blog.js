@@ -56,6 +56,9 @@ const createHTML = ({ title, date, tags, content, description }) => `
         <title>${title}</title>
         <link rel="stylesheet" href="/assets/css/post.css" />
         
+				<meta
+					http-equiv="Content-Security-Policy"
+					content="default-src 'self'; img-src https://*; child-src 'none';" />
         <meta charset="UTF-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="date" content="${date}" />
