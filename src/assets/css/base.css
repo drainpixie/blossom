@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: "Aileron Ultra Light";
+  font-family: "Aileron";
   src: url("/assets/fonts/aileron.otf") format("opentype");
 }
 
@@ -25,13 +25,13 @@
   --heading-colour: #222;
 
   /* Silver */
-  --paragraph-colour: #333;
+  --paragraph-colour: #555;
 
   --accent-colour: #e9eb93;
   /* Primrose */
 
   --font-heading: Medio;
-  --font-paragraph: Aileron Ultra Light;
+  --font-paragraph: Aileron;
 }
 
 body {
@@ -130,11 +130,11 @@ a:not(.back)::after {
 }
 
 ul {
-  margin-top: 0.7rem;
-  margin-bottom: 0.7rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   list-style: none;
   counter-reset: list;
