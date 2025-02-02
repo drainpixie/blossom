@@ -1,5 +1,5 @@
 {
-  "name": "blossom",
+  "name": "iki",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
@@ -19,5 +19,6 @@
     "@types/markdown-it": "^14.1.2",
     "@types/node": "^22.7.4",
     "@types/three": "^0.169.0"
-  }
+  },
+  "license": "MIT"
 }
