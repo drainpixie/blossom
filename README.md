@@ -1,4 +1,4 @@
-# 🌸 iki
+# 🌸 iki 粋
 
 a personal website and blog
 
