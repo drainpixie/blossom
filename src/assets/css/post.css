@@ -17,6 +17,14 @@ h3 {
   margin-top: 1.7rem;
 }
 
+h4 {
+  margin-top: 1.7rem;
+}
+
+:where(h1, h2, h3, h4, h5, h6) > a {
+  color: var(--heading-colour);
+}
+
 .circle {
   border-radius: 50%;
   height: 0.8rem;
@@ -49,10 +57,9 @@ blockquote {
 }
 
 pre {
-  background-color: var(--bg-colour);
   color: var(--paragraph-colour);
   padding: 1rem;
-  padding-left: 0;
+  background-color: var(--accent-colour-2) !important;
   border-radius: 0.3rem;
   overflow-x: auto;
 }
@@ -64,6 +71,7 @@ pre[class*="language-"] {
   font-style: normal;
   font-variation-settings: "MONO" 1;
 
+  background-color: var(--accent-colour-2) !important;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -127,7 +135,6 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string {
   color: #9a6e3a;
-  background: hsla(0, 0%, 100%, 0.5);
 }
 
 .token.atrule,
