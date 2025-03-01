@@ -1,6 +1,6 @@
 +++
 title = "Why My Love–Hate Relationship with Nix Continues"
-description = "A rant about why I hate Nix. Did I mention I love Nix?222"
+description = "A rant about why I hate Nix. Did I mention I love Nix?"
 date = 2024-06-10
 
 [taxonomies] 
