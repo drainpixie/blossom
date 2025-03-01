@@ -1,5 +1,22 @@
 {% extends "base.html" %}
 
+{% block extra_head %}
+<!-- Regular -->
+<meta name="description" content="Enchantress of digital ecosystems; making computers behave since 2006." />
+<meta name="keywords" content="Faye Keller, digital ecosystems, self-improvement, technology, web development" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ get_url(path=" /") }}" />
+<meta property="og:title" content="Faye Keller" />
+<meta property="og:description" content="Enchantress of digital ecosystems; making computers behave since 2006." />
+
+<!-- Twitter -->
+<meta property="twitter:url" content="{{ get_url(path=" /") }}" />
+<meta property="twitter:title" content="Faye Keller" />
+<meta property="twitter:description" content="Enchantress of digital ecosystems; making computers behave since 2006." />
+{% endblock extra_head %}
+
 {% block content %}
 <div>
     <h1>Faye Keller</h1>
@@ -28,10 +45,10 @@
     <ul class="tags">
         {%- set tags = get_taxonomy(kind="tags") %}
         {% for tag in tags.items %}
-            <a href="{{ tag.permalink | trim_end_matches(pat='/') | safe }}">
-                {{ tag.name }}
-                <span class="count">{{ tag.pages | length }}</span>
-            </a>
+        <a href="{{ tag.permalink | trim_end_matches(pat='/') | safe }}">
+            {{ tag.name }}
+            <span class="count">{{ tag.pages | length }}</span>
+        </a>
         {% if loop.index % 3 == 0 %}
         <br />
         {% endif %}

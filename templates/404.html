@@ -1,5 +1,21 @@
 {% extends "base.html" %}
 
+
+{% block extra_head %}
+<!-- change metadata to 404 page -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ get_url(path="/404") }}" />
+<meta property="og:title" content="404" />
+<meta property="og:description" content="Sorry, but the page you were trying to view does not exist." />
+
+<!-- Twitter -->
+<meta property="twitter:url" content="{{ get_url(path="/404") }}" />
+<meta property="twitter:title" content="404" />
+<meta property="twitter:description" content="Sorry, but the page you were trying to view does not exist." />
+
+<meta name="description" content="Sorry, but the page you were trying to view does not exist." />
+{% endblock %}
+
 {% block content %}
 
 <h1><a class="back" href="/">404</a></h1>
