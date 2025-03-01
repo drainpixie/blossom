@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Faye Keller</title>
+    <link rel="stylesheet" href="{{ get_url(path="index.css", trailing_slash=false) }}">
+
+    <!-- #region Meta Tags -->
+    <!-- Regular -->
+    <meta name="description" content="Enchantress of digital ecosystems; making computers behave since 2006." />
+    <meta name="keywords" content="Faye Keller, digital ecosystems, self-improvement, technology, web development" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ get_url(path="/") }}" />
+    <meta property="og:title" content="Faye Keller" />
+    <meta property="og:description" content="Enchantress of digital ecosystems; making computers behave since 2006." />
+
+    <!-- Twitter -->
+    <meta property="twitter:url" content="{{ get_url(path="/") }}" />
+    <meta property="twitter:title" content="Faye Keller" />
+    <meta property="twitter:description"
+        content="Enchantress of digital ecosystems; making computers behave since 2006." />
+
+    <!-- Favicons -->
+    {% for size in ["57x57", "60x60", "72x72", "76x76", "114x114", "120x120", "144x144", "152x152", "180x180"] %}
+    <link rel="apple-touch-icon" sizes="{{ size }}" href="{{ get_url(path="apple-icon-" ~ size ~ ".png" ) }}" />
+    {% endfor %}
+
+    {% for size in ["192x192", "32x32", "96x96", "16x16"] %}
+    <link rel="icon" type="image/png" sizes="{{ size }}" href="{{ get_url(path="favicon-" ~ size ~ ".png" ) }}" />
+    {% endfor %}
+
+    <meta name="msapplication-TileImage" content="{{ get_url(path="ms-icon-144x144.png") }}" />
+    <meta name="msapplication-TileColor" content="#e9eb93" />
+    <meta name="theme-color" content="#e9eb93" />
+    <link rel="manifest" href="{{ get_url(path="manifest.json") }}" />
+    <!-- #endregion  -->
+
+    {%block extra_head%}
+    {%endblock%}
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

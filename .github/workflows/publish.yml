@@ -3,13 +3,16 @@ on:
   workflow_dispatch:
   push:
     branches: ["main"]
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 jobs:
   build:
     name: Build
@@ -22,16 +25,20 @@ jobs:
         uses: cachix/install-nix-action@v27
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Install dependencies
-        run: nix develop --command pnpm install
+      
+      - name: Install Zola
+        run: nix profile install nixpkgs#zola
+      
       - name: Build website
-        run: nix develop --command pnpm build
+        run: zola build
+      
       - name: Configure pages
         uses: actions/configure-pages@v5
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: public
 
   deploy:
     name: Deploy

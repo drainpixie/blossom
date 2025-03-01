@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+    .blog-posts li p {
+        margin-left: 2rem;
+        margin-top: 0;
+    }
+
+    .blog-posts li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+</style>
+
+<main>
+    {%- if term %}
+    <h1><a class="back" href="/">{{ term.name | capitalize }}</a></h1>
+
+    {%- endif %}
+    <ul class="blog-posts">
+        {%- for page in term.pages %}
+        <li>
+            <span>
+                <i>
+                    <time datetime="{{ page.date | date(format='%+') }}" pubdate>
+                        {{ page.date | date(format="%d/%m — %Y") }}
+                    </time>
+                </i>
+            </span>
+            <a href="{{ page.permalink | trim_end_matches(pat='/') | safe }}">{{ page.title }}</a>
+            <p>{{ page.description }}</p>
+        </li>
+        {%- endfor %}
+    </ul>
+</main>
+
+{% endblock %}

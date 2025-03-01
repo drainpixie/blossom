@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block extra_head %}
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ page.permalink }}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+
+<!-- Twitter -->
+<meta property="twitter:url" content="{{ page.permalink }}" />
+<meta property="twitter:title" content="{{ page.title }}" />
+<meta property="twitter:description" content="{{ page.description }}" />
+
+<meta name="date" content="{{ page.date }}" />
+<meta name="tags" content="{{ page.taxonomies.tags }}" />
+<meta name="description" content="{{ page.description }}" />
+{% endblock extra_head %}
+
+{% block content %}
+<div class="post">
+  <h1><a class="back" href="/">{{ page.title }}</a></h1>
+  <span class="post-date">{{ page.date | date(format="%d/%m — %Y") }}</span>
+  {{ page.content | safe }}
+</div>
+{% endblock content %}

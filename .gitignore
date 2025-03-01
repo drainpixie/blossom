@@ -1,7 +1,4 @@
 .direnv
 .DS_Store
 
-node_modules
-dist
-
-src/posts/*.html
+public/

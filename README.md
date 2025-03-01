@@ -5,8 +5,8 @@ a personal website and blog
 ## 🖥️ dev
 
 ```sh
-$ nix develop
-$ pnpm dev
+nix develop
+zola serve
 ```
 
 <details>
@@ -14,8 +14,6 @@ $ pnpm dev
   
   ```sh
   cargo install --locked koji
-  corepack use pnpm
-  pnpx lefthook install
   ```
 
 </details>
