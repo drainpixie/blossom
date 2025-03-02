@@ -1,10 +1,12 @@
 +++
+
 title = "Rules For Working With Me"
 description = "Some rules to work with me, because, seriously, it's not easy."
 date = 2025-09-02
 
 [taxonomies]
 tags = ["productivity", "rant"]
+
 +++
 
 ## Why do I need this?

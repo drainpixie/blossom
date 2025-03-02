@@ -64,7 +64,6 @@ h6 {
   color: var(--heading-colour);
 }
 
-/* if it's a header with an anchor, remove the background */
 h1 a,
 h2 a,
 h3 a,
@@ -179,11 +178,14 @@ li::before {
 
 .highlight,
 a,
-em {
+em,
+code {
   background-color: var(--accent-colour);
   padding-left: 0.2rem;
   padding-right: 0.2rem;
   font-style: normal;
+
+  font-family: serif;
 }
 
 h1 a.back {
@@ -360,4 +362,9 @@ pre[class*="language-"] {
 
 .post-date + * {
   margin-top: 1.5rem !important;
+}
+
+.footnote-definition {
+  display: flex;
+  margin-top: 1rem;
 }
