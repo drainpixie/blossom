@@ -117,8 +117,7 @@ a.back {
 
 a.back::before {
   /* ↩ */
-  content: "\21A9";
-  font-variant-ligatures: none; /* prevent arrow from being replaced by emoji */
+  content: "\21A9\FE0E";
   text-decoration: none;
   display: inline-block;
   margin-right: 0.5rem;
@@ -126,8 +125,7 @@ a.back::before {
 
 a:not(.back)::after {
   /* ↗ */
-  content: "\2197";
-  font-variant-ligatures: none; /* prevent arrow from being replaced by emoji */
+  content: "\2197\FE0E";
   text-decoration: none;
   display: inline-block;
   margin-left: 0.2rem;
@@ -146,14 +144,13 @@ ul {
   border-left: 6px solid var(--accent-colour);
 }
 
-
 .tags {
-   all: unset;
+  all: unset;
 
-    display: inline;
-    margin-right: 0.5rem;
+  display: inline;
+  margin-right: 0.5rem;
 
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .tags span {
@@ -161,7 +158,6 @@ ul {
 
   display: inline-block;
   vertical-align: 0.2em;
- 
 }
 
 li {
