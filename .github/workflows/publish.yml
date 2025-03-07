@@ -25,16 +25,22 @@ jobs:
         uses: cachix/install-nix-action@v27
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Install Zola
-        run: nix profile install nixpkgs#zola
-      
+
+      - name: Install necessary packages
+        run: |
+          nix-channel --add https://nixos.org/channels/nixos-23.05 nixpkgs
+          nix-channel --update
+          nix-env -iA nixpkgs.zola
+
+      - name: Generate books.md
+        run: ./scripts/books.mjs
+
       - name: Build website
         run: zola build
-      
+
       - name: Configure pages
         uses: actions/configure-pages@v5
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

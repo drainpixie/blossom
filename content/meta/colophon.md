@@ -5,20 +5,20 @@ description = "A statement at the end of a book, typically with a printer’s em
 date = 2024-07-10
 
 [taxonomies] 
-tags = ["projects", "web"]
+tags = ["000", "projects", "web"]
 
 +++
 
 ## Raison d’être
 
-This website serves as a way for it to *express itself artistically* and technically — *much like a blank canvas.*\
+This website serves as a way for it to _express itself artistically_ and technically — _much like a blank canvas._\
 <br />
 
-Despite not being a designer, it has a keen interest in visual arts; pursuing *beauty and functionality* is its goal.
+Despite not being a designer, it has a keen interest in visual arts; pursuing _beauty and functionality_ is its goal.
 
 ## Intrinsics
 
-Before delving into the technicalities, it would like to mention its *biggest inspirations* for this website:\
+Before delving into the technicalities, it would like to mention its _biggest inspirations_ for this website:\
 <br />
 
 - [Igor Bedesqui](https://igorbedesqui.com) for [“Schrödinger’s Minimalism”](https://igorbedesqui.com/writing/schrodinger-minimalism)
@@ -40,18 +40,18 @@ Before delving into the technicalities, it would like to mention its *biggest in
 
 ### Tooling
 
-The website is built using [Zola](https://www.getzola.org) and plain *HTML, CSS, and JavaScript*, leveraging the customisation of Zola’s templates for the design.\
+The website is built using [Zola](https://www.getzola.org) and plain _HTML, CSS, and JavaScript_, leveraging the customisation of Zola’s templates for the design.\
 <br />
 
 It uses Zola’s powerful taxonomies and templates to generate the “digital garden” of the website.
 
 ## Ad futurum
 
-> *A Latin phrase* meaning “for the future.”
+> _A Latin phrase_ meaning “for the future.”
 
 <br />
 
-It plans to build a *knowledge base* by documenting its projects, thoughts, and experiences, as well as a *portfolio* showcasing its artistic and technical endeavours.\
+It plans to build a _knowledge base_ by documenting its projects, thoughts, and experiences, as well as a _portfolio_ showcasing its artistic and technical endeavours.\
 <br />
 
-Over the years, it hopes for this website to become a *time capsule of its growth and development*—a reflection of its past, present, and future self.
+Over the years, it hopes for this website to become a _time capsule of its growth and development_—a reflection of its past, present, and future self.

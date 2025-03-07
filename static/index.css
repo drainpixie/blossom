@@ -175,6 +175,14 @@ li::before {
   color: var(--highlight-colour);
   margin-right: 0.5rem;
 }
+.even-list li p {
+  margin-left: 2rem;
+  margin-top: 0;
+}
+
+.even-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
 
 .highlight,
 a,

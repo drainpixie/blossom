@@ -9,10 +9,10 @@ tags = ["tech", "debian"]
 
 +++
 
-It stands for *Advanced Packaging Tool*, mainly used on Debian (and based on.)  
+It stands for _Advanced Packaging Tool_, mainly used on Debian (and based on.)  
 <br />
 
-Effectively a *front-end* to *dpkg*, `apt` improves over it by *managing relations* between packages and dependencies by running `dpkg` in the best possible sequence using [[Topological Sorting|topological sorting]].
+Effectively a _front-end_ to _dpkg_, `apt` improves over it by _managing relations_ between packages and dependencies by running `dpkg` in the best possible sequence using [topological sorting](@/tech/topological-sorting.md).
 
 ## Installing a specific version of a package
 

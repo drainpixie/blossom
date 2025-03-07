@@ -3,16 +3,6 @@
 {% block content %}
 
 {% block extra_head %}
-<style>
-    .blog-posts li p {
-        margin-left: 2rem;
-        margin-top: 0;
-    }
-
-    .blog-posts li:not(:last-child) {
-        margin-bottom: 1rem;
-    }
-</style>
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="article" />
@@ -33,7 +23,7 @@
     <h1><a class="back" href="/">{{ term.name | capitalize }}</a></h1>
 
     {%- endif %}
-    <ul class="blog-posts">
+    <ul class="even-list">
         {%- for page in term.pages %}
         <li>
             <span>
