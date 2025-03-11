@@ -103,6 +103,7 @@ tags = ["000", "productivity"]
 +++
 
 For more detailed reviews, I have a [literal.club](https://literal.club/${username}) account.  
+The following data is fetched from the aforementioned website every CI run.  
 <br />
 
 
