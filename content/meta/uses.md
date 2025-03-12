@@ -63,7 +63,7 @@ Hopefully, it will be able to add a few PSPs and new 3DS XLs to this list.
 - [Bash](https://www.gnu.org/software/bash/) for the same reasons as GNOME, although it has wanted to work on its own shell for a while.
 - [Neovim](https://neovim.io/) for everything that isn't overly complex web development slop.
 - [Alacritty](https://github.com/alacritty/alacritty), which isn't its terminal of choice, but it has been too lazy to write a derivation for its [st](https://st.suckless.org/) build.
-- [Google Chrome](https://www.google.com/chrome/)—there isn't a real alternative, however much it would like to appease the average Linux user. Firefox is hot garbage, Ungoogled Chromium lacks account features and is shady, and everything in between is barely worth a glance.
+- [Google Chrome](https://www.google.com/chrome/)—there isn't a real alternative, however much it would like to appease the average Linux user. Firefox is shady hot garbage, Ungoogled Chromium lacks account features, and everything in between is barely worth a glance.
 - [Tailscale](https://tailscale.com), because setting up WireGuard—or worse, OpenVPN—from scratch is incredibly annoying.
 - Non-exhaustive CLI amenities: [ripgrep](https://github.com/BurntSushi/ripgrep), [eza](https://github.com/eza-community/eza), [fzf](https://github.com/junegunn/fzf), [zoxide](https://github.com/ajeetdsouza/zoxide), [direnv](https://github.com/direnv/direnv), [bat](https://github.com/sharkdp/bat), [koji](https://github.com/cococonscious/koji), [tokei](https://github.com/XAMPPRocky/tokei), [strace](https://github.com/strace/strace), [dust](https://github.com/bootandy/dust).
 
