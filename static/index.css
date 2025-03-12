@@ -29,8 +29,14 @@
 }
 
 body {
-  margin: 4rem;
-  max-width: 40%;
+  margin: 4rem auto;
+  width: min(800px, 85%);
+}
+
+body div {
+  margin: auto;
+  width: min(650px, 90%);
+  max-width: 100%;
 }
 
 ::selection {
@@ -39,13 +45,6 @@ body {
 
 ::moz-selection {
   background-color: var(--accent-colour);
-}
-
-@media (max-width: 768px) {
-  body {
-    margin: 2rem;
-    max-width: 70%;
-  }
 }
 
 p {
