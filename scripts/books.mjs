@@ -72,7 +72,12 @@ const byStatus = {
 for (const state of readingStates) {
   const { status, book } = state;
   const resolve = (book) =>
-    `- [${book.title}](${`https://www.goodreads.com/book/${book.slug}`}) by ${book.authors.map((a) => a.name).join(", ")}`;
+    [
+      `<li>`,
+      `<a href="https://www.goodreads.com/book/${book.slug}">${book.title}</a>`,
+      `<p>${book.authors.map((a) => a.name).join(", ")}</p>`,
+      `</li>`,
+    ].join("\n");
 
   switch (status) {
     case "FINISHED":
@@ -94,7 +99,7 @@ const markdown = `
 +++
 
 title = "Books"
-description = "A recap of books, I own, read, or want to read."
+description = "A recap of books, it owns, reads, or wants to read."
 date = ${new Date().toISOString().split("T")[0]}
 
 [taxonomies]
@@ -104,24 +109,32 @@ tags = ["000", "productivity"]
 
 For more detailed reviews, I have a [literal.club](https://literal.club/${username}) account.  
 The following data is fetched from the aforementioned website every CI run.  
-<br />
 
+<br />  
 
 ## Read
 
-${byStatus.read.join("\n")}
+<ul>
+	${byStatus.read.join("\n")}
+</ul>
 
 ## Reading
 
+<ul>
 ${byStatus.reading.join("\n")}
+</ul>
 
 ## To Read
 
-${byStatus.toRead.join("\n")}
+<ul>
+	${byStatus.toRead.join("\n")}
+</ul>
 
 ## Uncategorised 
 
-${byStatus.uncategorised.join("\n")}
+<ul>
+	${byStatus.uncategorised.join("\n")}
+</ul>
 `;
 
 await writeFile(

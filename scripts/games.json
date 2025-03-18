@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Shin Megami Tensei IV",
+    "platform": "3DS",
+    "status": "Completed",
+    "hours": 46,
+    "rating": 10,
+    "url": "https://en.wikipedia.org/wiki/Shin_Megami_Tensei_IV"
+  },
+  {
+    "title": "Shin Megami Tensei IV: Apocalypse",
+    "platform": "3DS",
+    "status": "Playing",
+    "hours": 20,
+    "rating": 7,
+    "url": "https://en.wikipedia.org/wiki/Shin_Megami_Tensei_IV:_Apocalypse"
+  },
+  {
+    "title": "Persona Q: Shadow of the Labyrinth",
+    "platform": "3DS",
+    "status": "Playing",
+    "hours": 15,
+    "rating": 7.5,
+    "url": "https://en.wikipedia.org/wiki/Persona_Q:_Shadow_of_the_Labyrinth"
+  },
+  {
+    "title": "GTA: Chinatown Wars",
+    "platform": "3DS",
+    "status": "Completed",
+    "hours": "70+",
+    "rating": 8.5,
+    "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto:_Chinatown_Wars"
+  },
+  {
+    "title": "Pokémon Fire Red/Leaf Green",
+    "platform": "GBA",
+    "status": "Completed",
+    "hours": "30~",
+    "rating": 8,
+    "url": "https://en.wikipedia.org/wiki/Pokémon_FireRed_and_LeafGreen"
+  },
+  {
+    "title": "Pokémon Emerald/Ruby/Sapphire",
+    "platform": "GBA",
+    "status": "Completed",
+    "hours": "30~",
+    "rating": 9.3,
+    "url": "https://en.wikipedia.org/wiki/Pokémon_Emerald"
+  },
+  {
+    "title": "Pokémon Diamond/Pearl/Platinum",
+    "platform": "NDS",
+    "status": "Completed",
+    "hours": "40~",
+    "rating": 8.5,
+    "url": "https://en.wikipedia.org/wiki/Pokémon_Diamond_and_Pearl"
+  },
+  {
+    "title": "Pokémon Black/White",
+    "platform": "NDS",
+    "status": "Completed",
+    "hours": "40~",
+    "rating": 9,
+    "url": "https://en.wikipedia.org/wiki/Pokémon_Black_and_White"
+  },
+  {
+    "title": "Pokémon HeartGold/SoulSilver",
+    "platform": "NDS",
+    "status": "Completed",
+    "hours": "40~",
+    "rating": 8,
+    "url": "https://en.wikipedia.org/wiki/Pokémon_HeartGold_and_SoulSilver"
+  }
+]

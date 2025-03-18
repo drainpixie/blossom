@@ -35,6 +35,9 @@ jobs:
       - name: Generate books.md
         run: ./scripts/books.mjs
 
+      - name: Generate games.md
+        run: ./scripts/games.mjs
+
       - name: Build website
         run: zola build
 
