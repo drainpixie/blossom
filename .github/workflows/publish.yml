@@ -28,7 +28,7 @@ jobs:
 
       - name: Install necessary packages
         run: |
-          nix-channel --add https://nixos.org/channels/nixos-23.05 nixpkgs
+          nix-channel --add https://nixos.org/channels/nixos-24.11 nixpkgs
           nix-channel --update
           nix-env -iA nixpkgs.zola
 

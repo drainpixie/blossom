@@ -1,6 +1,6 @@
 #! /usr/bin/env nix-shell
 /*
-#! nix-shell -i node -p nodejs
+#! nix-shell -i node -p nodejs_23
 */
 
 /**
