@@ -8,6 +8,14 @@
     "url": "https://en.wikipedia.org/wiki/Shin_Megami_Tensei_IV"
   },
   {
+    "title": "Persona 5 Royal",
+    "platform": "PS4",
+    "status": "Completed",
+    "hours": "115~",
+    "rating": 8,
+    "url": "https://en.wikipedia.org/wiki/Persona_5_Royal"
+  },
+  {
     "title": "Shin Megami Tensei IV: Apocalypse",
     "platform": "3DS",
     "status": "Playing",
@@ -18,8 +26,8 @@
   {
     "title": "Persona Q: Shadow of the Labyrinth",
     "platform": "3DS",
-    "status": "Playing",
-    "hours": 15,
+    "status": "Completed",
+    "hours": "70~",
     "rating": 7.5,
     "url": "https://en.wikipedia.org/wiki/Persona_Q:_Shadow_of_the_Labyrinth"
   },

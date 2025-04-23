@@ -2,8 +2,8 @@
 +++
 
 title = "Books"
-description = "A recap of books, it owns, reads, or wants to read."
-date = 2025-03-18
+description = "A recap of books, I own, read, or want to read."
+date = 2025-04-23
 
 [taxonomies]
 tags = ["000", "productivity"]

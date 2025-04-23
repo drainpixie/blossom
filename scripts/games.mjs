@@ -45,7 +45,7 @@ const markdown = `
 +++
 
 title = "Games"
-description = "A recap of games it has played or it's currently playing."
+description = "A recap of games I played or I'm currently playing."
 date = ${new Date().toISOString().split("T")[0]}
 
 [taxonomies]

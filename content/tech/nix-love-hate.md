@@ -101,11 +101,11 @@ Se](https://github.com/KFearsoff/nix-drama-explained).
 
 <br>
 
-Nothing, really. It just wanted to share its experience.\
-Overall, it is *enamoured* with Nix but also *repulsed*; it is a sort of
+Nothing, really. I just wanted to share my experience.\
+Overall, I am *enamoured* with Nix but also *repulsed*; it is a sort of
 paradoxical toxic relationship.\
 <br>
 
-Despite the pain it can bring, it truly believes that Nix is a glimpse
-into the *future* of package management — and it hopes it becomes more
+Despite the pain it can bring, I truly believe that Nix is a glimpse
+into the *future* of package management — and I hope it becomes more
 accessible to accelerate that future.

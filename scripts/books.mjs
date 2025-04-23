@@ -99,7 +99,7 @@ const markdown = `
 +++
 
 title = "Books"
-description = "A recap of books, it owns, reads, or wants to read."
+description = "A recap of books, I own, read, or want to read."
 date = ${new Date().toISOString().split("T")[0]}
 
 [taxonomies]

@@ -11,18 +11,17 @@ tags = ["000", "projects", "web"]
 
 ## Raison d’être
 
-This website serves as a way for it to _express itself artistically_ and technically — _much like a blank canvas._\
+This website serves as a way to _express myself artistically_ and technically — _much like a blank canvas._\
 <br />
 
-Despite not being a designer, it has a keen interest in visual arts; pursuing _beauty and functionality_ is its goal.
+Despite not being a designer, I have a keen interest in visual arts; pursuing _beauty and functionality_ is my goal.
 
 ## Intrinsics
 
-Before delving into the technicalities, it would like to mention its _biggest inspirations_ for this website:\
+Before delving into the technicalities, I would like to mention my _biggest inspirations_ for this website:\
 <br />
 
 - [Igor Bedesqui](https://igorbedesqui.com) for [“Schrödinger’s Minimalism”](https://igorbedesqui.com/writing/schrodinger-minimalism)
-- [Feáim Pacífica](https://fea.monster) for her constant feedback, inspiration, and support
 - [Devine Lu Linvega](https://xxiivv.com/) for their visual arts and approach to documentation
 
 ### Typefaces
@@ -51,7 +50,7 @@ It uses Zola’s powerful taxonomies and templates to generate the “digital ga
 
 <br />
 
-It plans to build a _knowledge base_ by documenting its projects, thoughts, and experiences, as well as a _portfolio_ showcasing its artistic and technical endeavours.\
+I plan to build a _knowledge base_ by documenting my projects, thoughts, and experiences, as well as a _portfolio_ showcasing my artistic and technical endeavours.\
 <br />
 
-Over the years, it hopes for this website to become a _time capsule of its growth and development_—a reflection of its past, present, and future self.
+Over the years, I hope for this website to become a _time capsule of my growth and development_—a reflection of my past, present, and future self.
